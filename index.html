@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat Photo Gallery</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
 </head>
 <body>
     <header>
@@ -58,6 +60,17 @@
                 })();
             </script>
             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <section id="classifier-section">
+            <h2>Dog or Cat?</h2>
+            <p>Upload an image to see if it's a dog or a cat.</p>
+            <input type="file" id="image-upload" accept="image/*">
+            <button id="classify-button">Classify</button>
+            <div id="image-preview-container">
+                <img id="image-preview" src="" alt="Image preview" style="display: none; max-width: 100%; margin-top: 1rem;">
+            </div>
+            <div id="prediction-container"></div>
         </section>
     </main>
     <script src="main.js"></script>
