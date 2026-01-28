@@ -235,3 +235,114 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+
+/* Blog List Styles */
+.blog-list-container {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.blog-list-container h2 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.blog-list-item {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--image-shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-list-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-list-item-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-list-item-content h3 {
+    margin-top: 0;
+    color: var(--text-color);
+}
+
+.blog-list-item-content p {
+    color: var(--text-color);
+    flex-grow: 1;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--header-background);
+    color: var(--header-text);
+    text-decoration: none;
+    border-radius: 5px;
+    align-self: flex-start;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+    opacity: 0.9;
+}
+
+/* Single Blog Post Styles */
+.blog-post {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--image-shadow);
+}
+
+.blog-post-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+}
+
+.blog-post-header h2 {
+    color: var(--text-color);
+    margin-top: 0;
+}
+
+.post-meta {
+    font-style: italic;
+    color: #888;
+}
+
+.blog-post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.blog-post-content {
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.blog-post-content h3 {
+    color: var(--text-color);
+    margin-top: 2rem;
+}
