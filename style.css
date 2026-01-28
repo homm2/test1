@@ -171,3 +171,67 @@ header {
     font-size: 1.2rem;
     color: var(--text-color);
 }
+
+/* New Navigation Styles */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    color: var(--header-text);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #ddd; /* A lighter shade for hover */
+}
+
+/* New Content Section Styles */
+.content-section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--image-shadow);
+}
+
+.content-section h2 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.content-section p {
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+
+/* Ad Container */
+.ad-container {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--header-background);
+    color: var(--header-text);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
