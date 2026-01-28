@@ -24,3 +24,17 @@ async function displayCatPhotos() {
 }
 
 displayCatPhotos();
+
+const themeSwitcher = document.getElementById('theme-switcher');
+const body = document.body;
+
+// Check for preferred theme
+const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (prefersDarkMode) {
+    body.classList.add('dark-mode');
+}
+
+themeSwitcher.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});

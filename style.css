@@ -2,14 +2,44 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --header-background: #333;
+    --header-text: white;
+    --image-shadow: rgba(0,0,0,0.1);
+}
+
+.dark-mode {
+    --background-color: #222;
+    --text-color: #f0f0f0;
+    --header-background: #222;
+    --header-text: #f0f0f0;
+    --image-shadow: rgba(255,255,255,0.1);
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: var(--header-background);
+    color: var(--header-text);
     padding: 1rem;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#theme-switcher {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border: 1px solid var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .photo-grid {
@@ -24,7 +54,7 @@ header {
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px var(--image-shadow);
     transition: transform 0.2s;
 }
 
