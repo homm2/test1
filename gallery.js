@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const photos = await getCatPhotos();
         if (photos) {
-            photos.forEach(photo => {
-                const img = document.createElement('img');
-                img.src = photo.url;
-                img.alt = 'A cute cat';
-                photoGrid.appendChild(img);
+            photos.forEach((photo, index) => {
+                const card = document.createElement('cat-card');
+                card.setAttribute('img-url', photo.url);
+                card.setAttribute('cat-name', `Cat Friend #${index + 1}`);
+                photoGrid.appendChild(card);
             });
         }
     }
