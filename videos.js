@@ -74,8 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.style.border = '1px solid var(--glass-border)';
 
                 const videoEl = document.createElement('video');
-                // Use #t=0.001 to tell the browser to pre-fetch the first frame for the poster
-                videoEl.src = videos[i] + '#t=0.001';
+                // Use #t=1.0 to tell the browser to pre-fetch the frame 1 second in, avoiding black start frames
+                videoEl.src = videos[i] + '#t=1.0';
                 videoEl.controls = true;
                 videoEl.preload = 'metadata'; // Use metadata to load the preview frame
                 videoEl.style.width = '100%';
