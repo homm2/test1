@@ -23,6 +23,8 @@ This project is a simple, beautiful, and responsive cat photo gallery. It is bui
 *   **Image Carousel**: Clicking on a photo opens it in a full-screen carousel, allowing users to navigate between photos.
 *   **Interactive Header**: A header with a search bar and navigation links.
 *   **Modern Components**: The application will use Web Components to create encapsulated, reusable UI elements.
+*   **Bird Videos Tab**: A new dedicated section added to the navigation for hosting videos from a Soliom bird feeder camera.
+*   **Video Gallery Optimizations**: Dynamic batch loading for video clips (loads 12 at a time with a 'Load More' button) and preloading preview frames to minimize bandwidth and prevent browser freezing.
 
 ## Current Plan
 
